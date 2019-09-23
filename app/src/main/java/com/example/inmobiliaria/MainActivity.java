@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
         String emailValido = "tincho_martintin10@hotmail.com";
         String passwordValido="123";
         if(!email.isEmpty() && !password.isEmpty()){
-                if(email==emailValido && password==passwordValido){
+                if(email.contentEquals(emailValido) && password.contentEquals(passwordValido)){
                     textViewError.setVisibility(view.VISIBLE);
                     textViewError.setText("inicia sesion");
                 }else{
