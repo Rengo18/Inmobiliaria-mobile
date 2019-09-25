@@ -2,6 +2,7 @@ package com.example.inmobiliaria;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -28,9 +29,12 @@ public class MainActivity extends AppCompatActivity {
         String emailValido = "tincho_martintin10@hotmail.com";
         String passwordValido="123";
         if(!email.isEmpty() && !password.isEmpty()){
-                if(email.contentEquals(emailValido) && password.contentEquals(passwordValido)){
-                    textViewError.setVisibility(view.VISIBLE);
-                    textViewError.setText("inicia sesion");
+                if(email.equals(emailValido) && password.equals(passwordValido)){
+                   Intent i =new Intent(this,Principal.class);
+                   i.putExtra("email",email);
+                   String nombre= "Franco Martin Colombo";
+                   i.putExtra("nombre",nombre);
+                   startActivity(i);
                 }else{
                     textViewError.setVisibility(view.VISIBLE);
                     textViewError.setText("el password o email no son validos");

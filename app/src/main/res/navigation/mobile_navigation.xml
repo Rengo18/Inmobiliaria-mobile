@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/nav_perfil">
+
+
+    <fragment
+        android:id="@+id/nav_perfil"
+        android:name="com.example.inmobiliaria.Perfil"
+        android:label="fragment_perfil"
+        tools:layout="@layout/fragment_perfil" />
+    <fragment
+        android:id="@+id/nav_propiedades"
+        android:name="com.example.inmobiliaria.Propiedades"
+        android:label="fragment_propiedades"
+        tools:layout="@layout/fragment_propiedades" />
+    <fragment
+        android:id="@+id/nav_inquilinos"
+        android:name="com.example.inmobiliaria.inquilinos"
+        android:label="fragment_inquilinos"
+        tools:layout="@layout/fragment_inquilinos" />
+    <fragment
+        android:id="@+id/nav_pagos"
+        android:name="com.example.inmobiliaria.pagos"
+        android:label="fragment_pagos"
+        tools:layout="@layout/fragment_pagos" />
+    <fragment
+        android:id="@+id/nav_contratos"
+        android:name="com.example.inmobiliaria.contratos"
+        android:label="fragment_contratos"
+        tools:layout="@layout/fragment_contratos" />
+</navigation>
