@@ -18,17 +18,17 @@
         tools:layout="@layout/fragment_propiedades" />
     <fragment
         android:id="@+id/nav_inquilinos"
-        android:name="com.example.inmobiliaria.inquilinos"
+        android:name="com.example.inmobiliaria.Inquilinos"
         android:label="fragment_inquilinos"
         tools:layout="@layout/fragment_inquilinos" />
     <fragment
         android:id="@+id/nav_pagos"
-        android:name="com.example.inmobiliaria.pagos"
+        android:name="com.example.inmobiliaria.Pagos"
         android:label="fragment_pagos"
         tools:layout="@layout/fragment_pagos" />
     <fragment
         android:id="@+id/nav_contratos"
-        android:name="com.example.inmobiliaria.contratos"
+        android:name="com.example.inmobiliaria.Contratos"
         android:label="fragment_contratos"
         tools:layout="@layout/fragment_contratos" />
 </navigation>

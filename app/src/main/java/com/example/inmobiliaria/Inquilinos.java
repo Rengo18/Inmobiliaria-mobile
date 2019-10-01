@@ -15,7 +15,7 @@ import android.widget.ListView;
 import java.util.ArrayList;
 
 
-public class inquilinos extends Fragment {
+public class Inquilinos extends Fragment {
     private ArrayList<Inquilino_item> inquilinos_list=new ArrayList<>();
 
     @Override
