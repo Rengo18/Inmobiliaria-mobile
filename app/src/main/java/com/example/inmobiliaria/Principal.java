@@ -1,12 +1,16 @@
 package com.example.inmobiliaria;
 
+
+import android.content.DialogInterface;
 import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 
+import android.view.MenuItem;
 import android.view.View;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
@@ -49,11 +53,13 @@ public class Principal extends AppCompatActivity {
         email_header.setText(email);
 
 
+
+
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         mAppBarConfiguration = new AppBarConfiguration.Builder(
                 R.id.nav_perfil,R.id.nav_inquilinos,R.id.nav_contratos,
-                R.id.nav_propiedades,R.id.nav_pagos)
+                R.id.nav_propiedades,R.id.nav_pagos,R.id.nav_close)
                 .setDrawerLayout(drawer)
                 .build();
 
@@ -79,4 +85,9 @@ public class Principal extends AppCompatActivity {
         return NavigationUI.navigateUp(navController, mAppBarConfiguration)
                 || super.onSupportNavigateUp();
     }
+
+
+
+
+
 }

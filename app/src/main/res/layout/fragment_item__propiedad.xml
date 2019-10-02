@@ -22,6 +22,7 @@
         android:layout_height="wrap_content"
         android:editable="true"
         android:ems="10"
+        android:focusableInTouchMode="false"
         android:inputType="textPersonName"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView7" />
@@ -40,6 +41,7 @@
         android:layout_height="wrap_content"
         android:editable="true"
         android:ems="10"
+        android:focusableInTouchMode="false"
         android:inputType="textPersonName"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView10" />
@@ -94,6 +96,7 @@
         android:layout_height="wrap_content"
         android:editable="true"
         android:ems="10"
+        android:focusableInTouchMode="false"
         android:inputType="textPersonName"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView15" />

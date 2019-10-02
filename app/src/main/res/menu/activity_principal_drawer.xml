@@ -29,7 +29,7 @@
     <item android:title="Salida">
         <menu>
             <item
-                android:id="@+id/close"
+                android:id="@+id/nav_close"
                 android:icon="@drawable/ic_exit_to_app"
                 android:title="cerrar sesion" />
         </menu>
