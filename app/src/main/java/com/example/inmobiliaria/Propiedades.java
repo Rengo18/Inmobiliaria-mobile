@@ -36,16 +36,15 @@ public class Propiedades extends Fragment implements Item_Propiedad.OnFragmentIn
         View rootview = inflater.inflate(R.layout.fragment_propiedades, container, false);
 
 
-        ViewGroup contenedor =(ViewGroup)container.getParent();
-        appBarLayout =((ViewGroup)contenedor.getParent()).findViewById(R.id.appBar);
-        tabLayout=new TabLayout(getActivity());
-        appBarLayout.addView(tabLayout);
+        //ViewGroup contenedor =(ViewGroup)container.getParent();
+        //appBarLayout =((ViewGroup)contenedor.getParent()).findViewById(R.id.appBar);
+        tabLayout=rootview.findViewById(R.id.tab_propiedad);
+        //appBarLayout.addView(tabLayout);
 
         viewPager= (ViewPager)rootview.findViewById(R.id.viewPager);
 
 
-
-         vpa =new  ViewPageAdapter(getFragmentManager());;
+         vpa =new  ViewPageAdapter(getChildFragmentManager());;
 
         //se cargaria dinamicamente con datos de la base ;
         vpa.addFragment(Item_Propiedad.newInstance("San Martin 827","2 dormitorio,cocina,baño","Casa","Alquiler","$5000"),"San Martin");
