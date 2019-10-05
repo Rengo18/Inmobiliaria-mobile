@@ -31,4 +31,9 @@
         android:name="com.example.inmobiliaria.Contratos"
         android:label="fragment_contratos"
         tools:layout="@layout/fragment_contratos" />
+    <fragment
+        android:id="@+id/nav_cerrar"
+        android:name="com.example.inmobiliaria.nav_cerrar"
+        android:label="fragment_nav_cerrar"
+        tools:layout="@layout/fragment_nav_cerrar" />
 </navigation>
